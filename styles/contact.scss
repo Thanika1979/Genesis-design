@@ -1,0 +1,88 @@
+$font-family: 'Mulish', sans-serif;
+$display: flex;
+$mycolor:rgba(74, 79, 242, 1);
+
+
+*{
+    
+    font-family:$font-family;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    width: 100%;
+    max-width: 1360px;
+    min-height: 20600px;
+    margin-left: 126px;
+    font-family: $font-family;
+    background: #FFFFFF;
+
+}
+.nav{
+    width: 100%;
+    max-width: 1109px;
+    height: 23px;
+    margin-top: 61px;
+   .logo{
+       float: left;        
+    }
+    ul{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        list-style: none;
+        overflow: hidden;
+        li{
+            float: right;
+            margin: 10px;
+        }    
+        &:hover{
+            color: $mycolor;
+        }    
+    }
+}
+.contact__container{
+    max-width: 1109px;
+    display: $display;
+    margin-top: 50px;
+    .item__one{
+        width: 475px;
+        height: 174px;
+    }
+    .item__second{
+        
+        width: 445px;
+        height: 56px;
+    }
+    .form{
+        width: 475px;
+        height: 291px;
+        form input{
+            width: 100%;
+            padding: 10px 10px;
+            border: 0;
+            border-bottom: 1px solid #D8D8D8;
+        }
+        button{
+            width: 125px;
+            height: 50px;
+            color: #FFFFFF;
+            margin-top: 25px;
+            background-color: $mycolor;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
+footer{
+    width: 1110px;
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
